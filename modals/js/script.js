@@ -1,4 +1,19 @@
+$('.modal_wrapper2 .close').click(function(e){
+    $(this).closest('.modal_wrapper2').removeClass('active');
+});
+$('.main_title .setting').click(function(e){
+	$('.filter1').toggleClass('active');
+});
 
+
+$('.str_loan .for_show4 .show').click(function(e){
+    $('.str_loan .for_show4 .show .www').toggleClass('act');
+    $('.str_loan .hide_block4').slideToggle();
+});
+$('.str_loan .for_show3 .show').click(function(e){
+    $('.str_loan .for_show3 .show .www').toggleClass('act');
+    $('.str_loan .hide_block3').slideToggle();
+});
 
 $('.str_loan .for_show .show').click(function(e){
     $('.str_loan .for_show .show .www').toggleClass('act');
@@ -298,6 +313,14 @@ $('.modal42_button').click(function(e){
     $('.modal42').toggleClass('active');
 });
 
+$('.modal43_button').click(function(e){
+    $('.modal43').toggleClass('active');
+});
+
+$('.modal44_button').click(function(e){
+    $('.modal44').toggleClass('active');
+});
+
 $('.modal2 .but').click(function(e){
     $('.modal2').removeClass('active');
     $('.modal1').addClass('active');
@@ -308,3 +331,10 @@ $('.modal_wrapper_container2 .vspl .cloos').click(function(){
 	$('.modal_wrapper_container2 .vspl').slideUp();
 });
 
+$('.content .for_tab .set_tab').click(function() { 
+$('.content .for_tab .set_tab.act').removeClass('act'); 
+$(this).addClass('act'); 
+$('.content .tab .item_tab').removeClass('act') 
+.eq($(this).index()).addClass('act'); 
+return false; 
+});
